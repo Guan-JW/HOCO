@@ -1,0 +1,21 @@
+======= sequenceCount operation =======
+------- with RLE -------
+IO(s): 20.1154
+Computation(s): 250.976
+Total(s): 271.091
+
+------- with LZW -------
+IO(s): 3.20776
+Computation(s): 39.6876
+Total(s): 42.8954
+
+------- with TADOC -------
+IO(s): 9.10628
+Computation(s): 309.355
+Total(s): 318.461
+
+------- with Uncompressed -------
+IO(s): 187.737
+Computation(s): 577.363
+Total(s): 765.1
+

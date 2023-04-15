@@ -1,0 +1,37 @@
+/****************Disclaimer***************/
+The university IP policy requires that the sharing is for the reviewing process only and the reviewers are expected to keep the code confidential and to use it only for the review purpose; we may open-source the code after finishing the paperwork with the university on IP concerns. 
+
+
+1. Please run ``bash compile.sh'' to compile TADOC first.
+
+2. We put an example input file in data_original directory. Please run ``bash compress data_original data_compressed''. The ``data_compressed'' includes the compressed file.
+
+3. To run an example, such as wordCount, please run ``./bin/wordCount data_compressed/''.
+
+
+The explaination for directories are as follows:
+
+bin  
+Generated execution files.
+
+compile.sh  
+Running "bash compile.sh" to compile. 
+
+compress.sh  
+Running "bash compress.sh input output" to compress the ``input'' directory,
+and the output directory is ``output''.
+
+data_original  
+The input tested data that concatenate four files separated by uU*.
+
+data_compressed
+The output compressed data.
+
+examples  
+Example programs.
+
+headers  
+Head files.
+
+src
+Key data structures and functions.

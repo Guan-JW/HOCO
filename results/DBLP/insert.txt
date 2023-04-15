@@ -1,0 +1,29 @@
+======= insert operation =======
+------- with LZW -------
+IO(s) : 76.5552
+EXTRACT TIME : 0.471374s
+AVGLatency(s): 0.00471374
+AVGLatency(us): 4713.74
+Throughput(op/s): 212.146
+
+------- with RLE -------
+IO(s) : 28.2048
+INSERT TIME : 0.09059s
+AVGLatency(s): 0.0009059
+AVGLatency(us): 905.9
+Throughput(op/s): 1103.87
+
+------- with TADOC -------
+IO(s) : 24.5108
+INSERT TIME : 0.063373s
+AVGLatency(s): 0.00063373
+AVGLatency(us): 633.73
+Throughput(op/s): 1577.96
+
+------- with Uncompressed -------
+IO(s) : 4.05456
+AVGLatency(s): 0.170872
+AVGLatency(us): 170872
+totalTime(s): 17.0872
+Throughput(op/s): 5.85233
+

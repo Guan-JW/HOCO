@@ -1,0 +1,29 @@
+======= delete operation =======
+------- with LZW -------
+IO(s) : 77.4355
+DELETE TIME : 6.7816s
+AVGLatency(s): 0.067816
+AVGLatency(us): 67816
+Throughput(op/s): 14.7458
+
+------- with RLE -------
+IO(s) : 27.9965
+DELETE TIME : 0.000347s
+AVGLatency(s): 3.47e-06
+AVGLatency(us): 3.47
+Throughput(op/s): 288184
+
+------- with TADOC -------
+IO(s) : 24.7487
+DELETE TIME : 0.237965s
+AVGLatency(s): 0.00237965
+AVGLatency(us): 2379.65
+Throughput(op/s): 420.23
+
+------- with Uncompressed -------
+IO(s) : 4.08134
+AVGLatency(s): 0.170104
+AVGLatency(us): 170104
+totalTime(s): 0.170104
+Throughput(op/s): 5.87876
+

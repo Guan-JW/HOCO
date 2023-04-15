@@ -1,0 +1,29 @@
+======= extract operation =======
+------- with LZW -------
+IO(s) : 9.64602
+EXTRACT TIME : 0.000238s
+AVGLatency(s): 2.38e-06
+AVGLatency(us): 2.38
+Throughput(op/s): 420168
+
+------- with RLE -------
+IO(s) : 28.3452
+EXTRACT TIME : 0.000339s
+AVGLatency(s): 3.39e-06
+AVGLatency(us): 3.39
+Throughput(op/s): 294985
+
+------- with TADOC -------
+IO(s) : 13.8826
+EXTRACT TIME : 0.000605s
+AVGLatency(s): 6.05e-06
+AVGLatency(us): 6.05
+Throughput(op/s): 165289
+
+------- with Uncompressed -------
+IO(s) : 8.3052
+AVGLatency(s): 4.24862e-06
+AVGLatency(us): 4.24862
+totalTime(s): 0.000424862
+Throughput(op/s): 235371
+

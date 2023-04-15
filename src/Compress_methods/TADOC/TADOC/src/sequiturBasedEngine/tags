@@ -1,0 +1,408 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADD_NEXT_INPUT_BIT	bitio.h	97;"	d
+BACK	stats.h	41;"	d
+BITIO_FREAD	bitio.h	131;"	d
+BITIO_FREAD	bitio.h	140;"	d
+BITIO_FWRITE	bitio.h	132;"	d
+BITIO_FWRITE	bitio.h	145;"	d
+BITIO_H	bitio.h	36;"	d
+BIT_PLUS_FOLLOW	arith.c	175;"	d	file:
+BIT_PLUS_FOLLOW	arith.c	186;"	d	file:
+BYTE_SIZE	bitio.h	39;"	d
+B_BITS	arith.h	35;"	d
+B_bits	arith.c	/^         int		B_bits = B_BITS;		\/* Default values *\/$/;"	v
+B_bits	arith.h	118;"	d
+CFLAGS	Makefile	/^CFLAGS = -O3$/;"	m
+CLASSFILES	java/Makefile	/^CLASSFILES = $(SOURCES:.java=.class)$/;"	m
+CODER_H	arith.h	28;"	d
+CODE_TO_NONTERM	compress.cc	69;"	d	file:
+CODE_TO_TERM	compress.cc	66;"	d	file:
+DECODE_RENORMALISE	arith.c	230;"	d	file:
+DECODE_RENORMALISE	arith.c	242;"	d	file:
+DYNAMIC	stats.h	49;"	d
+ENCODE_RENORMALISE	arith.c	198;"	d	file:
+END_OF_FILE	compress.cc	46;"	d	file:
+FIRST_RULE	compress.cc	50;"	d	file:
+FIRST_TERMINAL	compress.cc	49;"	d	file:
+FIXED_STR	arith.c	111;"	d	file:
+FORW	stats.h	42;"	d
+F_BITS	arith.h	39;"	d
+F_bits	arith.c	/^         int		F_bits = F_BITS;$/;"	v
+F_bits	arith.h	119;"	d
+Guard	sequitur.py	/^class Guard(Symbol):$/;"	c
+HASH	sequitur_simple.cc	278;"	d	file:
+HASH2	sequitur_simple.cc	279;"	d	file:
+Half	arith.c	/^  static code_value	Half;$/;"	v	file:
+Half	arith.c	134;"	d	file:
+INCR_SYMBOL_PROB	stats.c	116;"	d	file:
+INCR_SYMBOL_PROB	stats.c	125;"	d	file:
+INCR_SYMBOL_PROB_ACTUAL	stats.c	78;"	d	file:
+INCR_SYMBOL_PROB_MPS	stats.c	97;"	d	file:
+INPUT_BYTE	bitio.h	130;"	d
+INPUT_BYTE	bitio.h	136;"	d
+IS_NONTERMINAL	compress.cc	74;"	d	file:
+IS_TERMINAL	compress.cc	73;"	d	file:
+JAVA	java/Makefile	/^JAVA = javac -O$/;"	m
+K	sequitur.cc	/^    K = 1;$/;"	v
+KEEPI_DUMMY	compress.cc	58;"	d	file:
+KEEPI_LENGTH	compress.cc	59;"	d	file:
+KEEPI_NO	compress.cc	56;"	d	file:
+KEEPI_YES	compress.cc	57;"	d	file:
+MAXRULELEN_TARGET	compress.cc	53;"	d	file:
+MAX_BITS_OUTSTANDING	arith.h	58;"	d
+MAX_B_BITS	arith.h	104;"	d
+MAX_F_BITS	arith.h	105;"	d
+MEM_PER_SYMBOL	stats.h	62;"	d
+MINMAXTERM_TARGET	compress.cc	52;"	d	file:
+MIN_INCR	stats.h	64;"	d
+MOST_PROB_AT_END	stats.c	55;"	d	file:
+MULT_STR	arith.c	108;"	d	file:
+Max_frequency	stats.c	/^    static freq_value	Max_frequency;$/;"	v	file:
+Max_frequency	stats.c	46;"	d	file:
+NONOPT	getopt.c	17;"	d	file:
+NONTERM_TO_CODE	compress.cc	68;"	d	file:
+NOT_KNOWN	stats.h	44;"	d
+NO_MEMORY	stats.h	46;"	d
+NonTerminal	sequitur.py	/^class NonTerminal(Symbol):$/;"	c
+ORIG_BIT_PLUS_FOLLOW	arith.c	159;"	d	file:
+OUTPUT_BIT	bitio.h	64;"	d
+OUTPUT_BYTE	bitio.h	129;"	d
+OUTPUT_BYTE	bitio.h	134;"	d
+PRIME	sequitur_simple.cc	274;"	d	file:
+PROGRAM	java/Makefile	/^PROGRAM = sequitur$/;"	m
+Quarter	arith.c	/^  static code_value	Quarter;$/;"	v	file:
+Quarter	arith.c	135;"	d	file:
+R	compress.cc	/^static rules **R;$/;"	v	file:
+R	sequitur_simple.cc	/^rules **R;$/;"	v
+R1	sequitur.cc	/^rules **R1;$/;"	v
+Ri	sequitur.cc	/^int Ri;$/;"	v
+Ri	sequitur_simple.cc	/^int Ri;$/;"	v
+Rule	sequitur.py	/^class Rule:$/;"	c
+S	sequitur.cc	/^rules *S;                 \/\/ pointer to main rule of the grammar$/;"	v
+S	sequitur_simple.cc	/^rules S;$/;"	v
+SHIFT_STR	arith.c	109;"	d	file:
+SOURCES	java/Makefile	/^SOURCES = symbol.java guard.java terminal.java nonTerminal.java \\$/;"	m
+SPECIAL_SYMBOLS	compress.cc	48;"	d	file:
+START_RULE	compress.cc	45;"	d	file:
+STATIC	stats.h	48;"	d
+STATS_H	stats.h	28;"	d
+STOP_FORGETTING	compress.cc	47;"	d	file:
+Symbol	sequitur.py	/^class Symbol:$/;"	c
+TERM_TO_CODE	compress.cc	65;"	d	file:
+TOO_MANY_SYMBOLS	stats.h	45;"	d
+Terminal	sequitur.py	/^class Terminal(Symbol):$/;"	c
+UNCOMPRESS_RSIZE	compress.cc	77;"	d	file:
+Usage	classes.h	/^  int Usage;$/;"	m	class:rules
+VARY_STR	arith.c	110;"	d	file:
+ZERO_FREQ_PROB	stats.c	165;"	d	file:
+__init__	sequitur.py	/^  def __init__(self):$/;"	m	class:Symbol
+__init__	sequitur.py	/^  def __init__(self, numRules):$/;"	m	class:Rule
+__init__	sequitur.py	/^  def __init__(self, rule):$/;"	m	class:Guard
+__init__	sequitur.py	/^  def __init__(self, rule):$/;"	m	class:NonTerminal
+__init__	sequitur.py	/^  def __init__(self, value):$/;"	m	class:Terminal
+_bitio_tmp	bitio.c	/^int		_bitio_tmp;			\/* Used by some of the *\/$/;"	v
+_bytes_input	bitio.c	/^unsigned int	_bytes_input = 0;$/;"	v
+_bytes_output	bitio.c	/^unsigned int	_bytes_output = 0;$/;"	v
+_ignore_first_bit	arith.c	/^    int _ignore_first_bit = 1;$/;"	v
+_in_bit_ptr	bitio.c	/^unsigned char	_in_bit_ptr = 0;		\/* bits left in buffer *\/$/;"	v
+_in_buffer	bitio.c	/^int		_in_buffer;			\/* I\/O buffer *\/$/;"	v
+_in_garbage	bitio.c	/^int		_in_garbage;			\/* bytes read beyond eof *\/$/;"	v
+_out_bits_to_go	bitio.c	/^int		_out_bits_to_go;		\/* bits to fill buffer *\/$/;"	v
+_out_buffer	bitio.c	/^int		_out_buffer;			\/* I\/O buffer *\/$/;"	v
+action	java/sequitur.java	/^  public boolean action(Event evt,Object arg){$/;"	m	class:sequitur
+adjust_zero_freq	stats.c	143;"	d	file:
+arithmetic_decode	arith.c	/^void arithmetic_decode(freq_value low, freq_value high, freq_value total)$/;"	f
+arithmetic_decode_target	arith.c	/^freq_value arithmetic_decode_target(freq_value total)$/;"	f
+arithmetic_encode	arith.c	/^void arithmetic_encode(freq_value low, freq_value high, freq_value total)$/;"	f
+binary_arithmetic_decode	arith.c	/^binary_arithmetic_decode(freq_value c0, freq_value c1)$/;"	f
+binary_arithmetic_encode	arith.c	/^void binary_arithmetic_encode(freq_value c0, freq_value c1, int bit)$/;"	f
+binary_context	stats.h	/^} binary_context;$/;"	t	typeref:struct:__anon2
+binary_decode	stats.c	/^binary_decode(binary_context *pContext)$/;"	f
+binary_encode	stats.c	/^binary_encode(binary_context *pContext, int bit)$/;"	f
+bitio_bytes_in	bitio.c	/^int bitio_bytes_in(void)$/;"	f
+bitio_bytes_out	bitio.c	/^int bitio_bytes_out(void)$/;"	f
+buttonPanel	java/sequitur.java	/^  Panel buttonPanel;$/;"	f	class:sequitur
+c0	stats.h	/^    freq_value c0;			\/* number of zeroes *\/$/;"	m	struct:__anon2
+c1	stats.h	/^    freq_value c1;			\/* number of ones *\/$/;"	m	struct:__anon2
+calculate_rule_usage	sequitur.cc	/^void calculate_rule_usage(rules *r)$/;"	f
+check	classes.cc	/^int symbols::check() {$/;"	f	class:symbols
+check	java/guard.java	/^  public boolean check(){$/;"	m	class:guard
+check	java/symbol.java	/^  public boolean check(){$/;"	m	class:symbol
+check	sequitur.py	/^  def check(self):$/;"	m	class:Guard
+check	sequitur.py	/^  def check(self):$/;"	m	class:Symbol
+check	sequitur_simple.cc	/^  int check() {$/;"	f	class:symbols
+cleanUp	java/guard.java	/^  public void cleanUp(){$/;"	m	class:guard
+cleanUp	java/nonTerminal.java	/^  public void cleanUp(){$/;"	m	class:nonTerminal
+cleanUp	java/symbol.java	/^  public abstract void cleanUp();$/;"	m	class:symbol
+cleanUp	java/terminal.java	/^  public void cleanUp(){$/;"	m	class:terminal
+cleanup	sequitur.py	/^  def cleanup(self):$/;"	m	class:Guard
+cleanup	sequitur.py	/^  def cleanup(self):$/;"	m	class:NonTerminal
+cleanup	sequitur.py	/^  def cleanup(self):$/;"	m	class:Symbol
+cleanup	sequitur.py	/^  def cleanup(self):$/;"	m	class:Terminal
+clone	java/nonTerminal.java	/^  protected Object clone(){$/;"	m	class:nonTerminal
+clone	sequitur.py	/^  def clone(self):$/;"	m	class:NonTerminal
+clone	sequitur.py	/^  def clone(self):$/;"	m	class:Symbol
+clone	sequitur.py	/^  def clone(self):$/;"	m	class:Terminal
+code_value	arith.h	/^typedef unsigned long   code_value;	\/* B_BITS of precision *\/$/;"	t
+coder_desc	arith.c	/^     char *coder_desc =	MULT_STR FIXED_STR;$/;"	v
+coder_desc	arith.c	/^     char *coder_desc =	MULT_STR VARY_STR;$/;"	v
+coder_desc	arith.c	/^     char *coder_desc =	SHIFT_STR FIXED_STR;$/;"	v
+coder_desc	arith.c	/^     char *coder_desc =	SHIFT_STR VARY_STR;$/;"	v
+collisions	classes.cc	/^int collisions = 0;$/;"	v
+compress	sequitur.cc	/^int compress = 0,$/;"	v
+compression_initialized	sequitur.cc	/^bool compression_initialized = false;$/;"	v
+context	stats.h	/^} context;$/;"	t	typeref:struct:__anon1
+count	classes.h	/^  int count;$/;"	m	class:rules
+count	java/rule.java	/^  public int count;$/;"	f	class:rule
+count	sequitur_simple.cc	/^  int count;$/;"	m	class:rules	file:
+create_binary_context	stats.c	/^binary_context *create_binary_context(void)$/;"	f
+create_context	stats.c	/^context *create_context(int length, int type)$/;"	f
+current_rule	compress.cc	/^int current_rule = FIRST_RULE;$/;"	v
+current_rule_index	compress.cc	/^static int current_rule_index = 0;$/;"	v	file:
+dataLabel	java/sequitur.java	/^  Label dataLabel;$/;"	f	class:sequitur
+dataPanel	java/sequitur.java	/^  Panel dataPanel;$/;"	f	class:sequitur
+decode	stats.c	/^decode(context *pContext)$/;"	f
+deleteDigram	java/guard.java	/^  public void deleteDigram(){$/;"	m	class:guard
+deleteDigram	java/symbol.java	/^  public void deleteDigram(){$/;"	m	class:symbol
+delete_digram	classes.h	/^  void delete_digram() {$/;"	f	class:symbols
+delete_digram	sequitur.py	/^  def delete_digram(self):$/;"	m	class:Symbol
+delete_digram	sequitur_simple.cc	/^  void delete_digram() {$/;"	f	class:symbols
+delete_symbol	stats.c	/^void delete_symbol(context *pContext, int symbol)$/;"	f
+delimiter	sequitur.cc	/^  delimiter = -1,$/;"	v
+delimiter_string	sequitur.cc	/^char *delimiter_string = 0;$/;"	v
+deuse	classes.h	/^  void deuse() { count --; }$/;"	f	class:rules
+deuse	sequitur_simple.cc	/^  void deuse() { count --; };$/;"	f	class:rules
+dictionary_reverse	sequitur.cc	/^map<string,ulong> dictionary_reverse;$/;"	v
+digram	sequitur.py	/^  def digram(self):$/;"	m	class:Symbol
+digrams	sequitur.py	/^digrams = {}$/;"	v
+div_value	arith.h	/^typedef unsigned long	div_value;	\/* B_BITS-F_BITS of precision *\/$/;"	t
+do_print	sequitur.cc	/^  do_print = 0,$/;"	v
+do_uncompress	sequitur.cc	/^  do_uncompress = 0,$/;"	v
+doneinputtingbits	bitio.c	/^void doneinputtingbits(void)$/;"	f
+doneoutputtingbits	bitio.c	/^void doneoutputtingbits(void)$/;"	f
+encode	stats.c	/^int encode(context *pContext, int symbol)$/;"	f
+encode_rule	compress.cc	/^void encode_rule(rules *r, int keepi)$/;"	f
+encode_symbol	compress.cc	/^void encode_symbol(ulong s)$/;"	f
+end_compress	compress.cc	/^void end_compress() {$/;"	f
+equals	java/symbol.java	/^  public boolean equals(Object obj){$/;"	m	class:symbol
+equals	sequitur.py	/^  def equals(self,obj):$/;"	m	class:Symbol
+expand	classes.cc	/^void symbols::expand() {$/;"	f	class:symbols
+expand	java/nonTerminal.java	/^  public void expand(){$/;"	m	class:nonTerminal
+expand	sequitur.py	/^  def expand(self):$/;"	m	class:NonTerminal
+expand	sequitur_simple.cc	/^void symbols::expand() {$/;"	f	class:symbols
+f1	java/sequitur.java	/^  Font f1 = new Font("TimesRoman", Font.BOLD, 18);$/;"	f	class:sequitur
+f2	java/sequitur.java	/^  Font f2 = new Font("TimesRoman", Font.PLAIN,12);$/;"	f	class:sequitur
+find_digram	classes.cc	/^symbols **find_digram(symbols *s)$/;"	f
+find_digram	sequitur_simple.cc	/^symbols **find_digram(symbols *s)$/;"	f
+finish_decode	arith.c	/^void finish_decode(void)$/;"	f
+finish_encode	arith.c	/^void finish_encode(void)$/;"	f
+first	classes.cc	/^symbols *rules::first() { return guard->next(); }$/;"	f	class:rules
+first	java/rule.java	/^  public symbol first(){$/;"	m	class:rule
+first	sequitur.py	/^  def first(self):$/;"	m	class:Rule
+first	sequitur_simple.cc	/^symbols *rules::first() { return guard->next(); }$/;"	f	class:rules
+forget	compress.cc	/^void forget(symbols *s)$/;"	f
+forget_print	sequitur.cc	/^void forget_print(symbols *s)$/;"	f
+forgetting	compress.cc	/^static int forgetting = 1;$/;"	v	file:
+freq	classes.h	/^  int freq()           { return count; }$/;"	f	class:rules
+freq	sequitur_simple.cc	/^  int freq() { return count; };$/;"	f	class:rules
+freq_value	arith.h	/^typedef unsigned long	freq_value;	\/* F_BITS+1 of precision *\/$/;"	t
+getRules	java/rule.java	/^  public String getRules(){$/;"	m	class:rule
+getWordDictionary	sequitur.cc	/^string getWordDictionary(ifstream& in)$/;"	f
+get_interval	stats.c	/^get_interval(context *pContext, freq_value *pLow, freq_value *pHigh, int symbol)$/;"	f	file:
+get_rules	sequitur.py	/^  def get_rules(self):$/;"	m	class:Rule
+get_symbol	compress.cc	/^int get_symbol()$/;"	f
+getopt	getopt.c	/^int getopt ( int argc, char **argv, char *optstring )$/;"	f
+guard	classes.h	/^  symbols *guard;$/;"	m	class:rules
+guard	java/guard.java	/^  guard(rule theRule){$/;"	m	class:guard
+guard	java/guard.java	/^public class guard extends symbol{$/;"	c
+guard	sequitur_simple.cc	/^  symbols *guard;$/;"	m	class:rules	file:
+halve_context	stats.c	/^halve_context(context *pContext)$/;"	f	file:
+hashCode	java/symbol.java	/^  public int hashCode(){$/;"	m	class:symbol
+hash_code	sequitur.py	/^  def hash_code(self):$/;"	m	class:Symbol
+help	sequitur.cc	/^const char *help = "\\n\\$/;"	v
+in_D	arith.c	/^static code_value	in_D;				\/* = V-L (V offset)*\/$/;"	v	file:
+in_R	arith.c	/^static code_value	in_R;				\/* code range *\/$/;"	v	file:
+in_V	arith.c	/^static code_value	in_V;				\/* Bitstream window *\/$/;"	v	file:
+in_r	arith.c	/^static div_value	in_r;				\/* normalized range *\/$/;"	v	file:
+incr	stats.h	/^    freq_value incr;			\/* current increment *\/$/;"	m	struct:__anon1
+incr	stats.h	/^    freq_value incr;			\/* current increment used *\/$/;"	m	struct:__anon2
+index	classes.h	/^  int index()          { return number; }$/;"	f	class:rules
+index	classes.h	/^  void index(int i)    { number = i; }$/;"	f	class:rules
+index	java/rule.java	/^  public int index;$/;"	f	class:rule
+index	sequitur_simple.cc	/^  int index() { return number; };$/;"	f	class:rules
+index	sequitur_simple.cc	/^  void index(int i) { number = i; };$/;"	f	class:rules
+init	java/sequitur.java	/^  public void init(){$/;"	m	class:sequitur
+init_zero_freq	stats.c	/^void init_zero_freq(context *pContext)$/;"	f
+initial_size	stats.h	/^    int initial_size;			\/* original length of context *\/$/;"	m	struct:__anon1
+insertAfter	java/symbol.java	/^  public void insertAfter(symbol toInsert){$/;"	m	class:symbol
+insert_after	classes.h	/^  void insert_after(symbols *y) {$/;"	f	class:symbols
+insert_after	sequitur.py	/^  def insert_after(self, to_insert):$/;"	m	class:Symbol
+insert_after	sequitur_simple.cc	/^  void insert_after(symbols *y) {$/;"	f	class:symbols
+install_symbol	stats.c	/^int install_symbol(context *pContext, int symbol)$/;"	f
+isGuard	java/guard.java	/^  public boolean isGuard(){$/;"	m	class:guard
+isGuard	java/symbol.java	/^  public boolean isGuard(){$/;"	m	class:symbol
+isNonTerminal	java/nonTerminal.java	/^  public boolean isNonTerminal(){$/;"	m	class:nonTerminal
+isNonTerminal	java/symbol.java	/^  public boolean isNonTerminal(){$/;"	m	class:symbol
+is_guard	classes.h	/^  bool is_guard() { return non_terminal() && rule()->first()->prev() == this; }$/;"	f	class:symbols
+is_guard	sequitur.py	/^  def is_guard(self):$/;"	m	class:Guard
+is_guard	sequitur.py	/^  def is_guard(self):$/;"	m	class:Symbol
+is_guard	sequitur_simple.cc	/^  int is_guard() { return non_terminal() && rule()->first()->prev() == this; };$/;"	f	class:symbols
+is_nonterminal	sequitur.py	/^  def is_nonterminal(self):$/;"	m	class:NonTerminal
+is_nonterminal	sequitur.py	/^  def is_nonterminal(self):$/;"	m	class:Symbol
+join	classes.h	/^  static void join(symbols *left, symbols *right) {$/;"	f	class:symbols
+join	java/symbol.java	/^  public static void join(symbol left, symbol right){$/;"	m	class:symbol
+join	sequitur.py	/^  def join(self, left, right):$/;"	m	class:Symbol
+join	sequitur_simple.cc	/^  static void join(symbols *left, symbols *right) {$/;"	f	class:symbols
+keep	compress.cc	/^               *keep;$/;"	v	file:
+label1Panel	java/sequitur.java	/^  Panel label1Panel;$/;"	f	class:sequitur
+label2Panel	java/sequitur.java	/^  Panel label2Panel;$/;"	f	class:sequitur
+last	classes.cc	/^symbols *rules::last()  { return guard->prev(); }$/;"	f	class:rules
+last	java/rule.java	/^  public symbol last(){$/;"	m	class:rule
+last	sequitur.py	/^  def last(self):$/;"	m	class:Rule
+last	sequitur_simple.cc	/^symbols *rules::last() { return guard->prev(); }$/;"	f	class:rules
+length	stats.h	/^    int max_length, length;		\/* length of tree and current length *\/$/;"	m	struct:__anon1
+lengths	compress.cc	/^               *lengths,           \/\/ rule lengths$/;"	v	file:
+lookups	classes.cc	/^int lookups = 0;$/;"	v
+main	sequitur.cc	/^int main(int argc, char **argv)$/;"	f
+main	sequitur_simple.cc	/^main()$/;"	f
+match	java/symbol.java	/^  public void match(symbol newD,symbol matching){$/;"	m	class:symbol
+match	sequitur.py	/^  def match(self, newD, matching):$/;"	m	class:Symbol
+match	sequitur_simple.cc	/^void symbols::match(symbols *ss, symbols *m)$/;"	f	class:symbols
+max_length	stats.h	/^    int max_length, length;		\/* length of tree and current length *\/$/;"	m	struct:__anon1
+max_rule_len	sequitur.cc	/^int max_rule_len = 2;     \/\/ maximum rule length$/;"	v
+max_terminal	sequitur.cc	/^    max_terminal;         \/\/$/;"	v
+memory_to_use	sequitur.cc	/^  memory_to_use = 1000000000,$/;"	v
+min_terminal	sequitur.cc	/^int min_terminal,         \/\/ minimum and maximum value among terminal symbols$/;"	v
+most_freq_count	stats.h	/^    freq_value	most_freq_count;$/;"	m	struct:__anon1
+most_freq_pos	stats.h	/^    freq_value	most_freq_pos;$/;"	m	struct:__anon1
+most_freq_symbol	stats.h	/^    int 	most_freq_symbol;$/;"	m	struct:__anon1
+n	classes.h	/^  symbols *n, *p;     \/\/ next and previous symbol within the rule$/;"	m	class:symbols
+n	java/symbol.java	/^  symbol p,n;$/;"	f	class:symbol
+n	sequitur_simple.cc	/^  symbols *n, *p;$/;"	m	class:symbols	file:
+nSingletons	stats.h	/^    freq_value nSingletons;		\/* no. symbols with frequency=1 *\/$/;"	m	struct:__anon1
+nSymbols	stats.h	/^    int nSymbols;			\/* count of installed symbols *\/$/;"	m	struct:__anon1
+next	classes.h	/^  symbols *next() { return n; }$/;"	f	class:symbols
+next	sequitur_simple.cc	/^  symbols *next() { return n;};$/;"	f	class:symbols
+nonTerminal	java/nonTerminal.java	/^  nonTerminal(rule theRule){$/;"	m	class:nonTerminal
+nonTerminal	java/nonTerminal.java	/^public class nonTerminal extends symbol implements Cloneable{$/;"	c
+non_terminal	classes.h	/^  int non_terminal() { return ((s % 2) == 0) && (s != 0);}$/;"	f	class:symbols
+non_terminal	sequitur_simple.cc	/^  int non_terminal() { return ((s % 2) == 0) && (s != 0);};$/;"	f	class:symbols
+numRules	java/rule.java	/^  public static int numRules = 0;$/;"	f	class:rule
+numRules	sequitur.py	/^numRules=0$/;"	v
+numTerminals	java/symbol.java	/^  static final int numTerminals = 100000;$/;"	f	class:symbol
+num_rules	sequitur.cc	/^int num_rules = 0;        \/\/ number of rules in the grammar$/;"	v
+num_rules	sequitur_simple.cc	/^int num_rules = 0;$/;"	v
+num_symbols	sequitur.cc	/^int num_symbols = 0;      \/\/ number of symbols in the grammar$/;"	v
+number	classes.h	/^  int number;$/;"	m	class:rules
+number	java/rule.java	/^  public int number;$/;"	f	class:rule
+number	sequitur.cc	/^void number()$/;"	f
+number	sequitur_simple.cc	/^  int number;$/;"	m	class:rules	file:
+numbers	sequitur.cc	/^  numbers = 0,$/;"	v
+occupied	classes.cc	/^int occupied = 0;$/;"	v
+offset	getopt.c	/^static int offset = 0;$/;"	v	file:
+operator <<	classes.cc	/^ostream &operator << (ostream &o, symbols &s)$/;"	f
+optarg	getopt.c	/^char *optarg = NULL;$/;"	v
+optind	getopt.c	/^int optind = 1;$/;"	v
+out_L	arith.c	/^static code_value	out_L;				\/* lower bound *\/$/;"	v	file:
+out_R	arith.c	/^static code_value	out_R;				\/* code range *\/$/;"	v	file:
+out_bits_outstanding	arith.c	/^static unsigned long	out_bits_outstanding;		\/* follow bit count *\/$/;"	v	file:
+output	classes.cc	/^void rules::output()$/;"	f	class:rules
+output2	compress.cc	/^void rules::output2()$/;"	f	class:rules
+p	classes.h	/^  symbols *n, *p;     \/\/ next and previous symbol within the rule$/;"	m	class:symbols
+p	java/symbol.java	/^  symbol p,n;$/;"	f	class:symbol
+p	sequitur_simple.cc	/^  symbols *n, *p;$/;"	m	class:symbols	file:
+p	sequitur_simple.cc	/^void p(rules *r) {$/;"	f
+phind	sequitur.cc	/^  phind = 0,$/;"	v
+point_to_self	classes.h	/^  void point_to_self() { join(this, this); }$/;"	f	class:symbols
+point_to_self	sequitur_simple.cc	/^  void point_to_self() { join(this, this); };$/;"	f	class:symbols
+prev	classes.h	/^  symbols *prev() { return p; }$/;"	f	class:symbols
+prev	sequitur_simple.cc	/^  symbols *prev() { return p;};$/;"	f	class:symbols
+prime	java/symbol.java	/^  static final int prime = 2265539;$/;"	f	class:symbol
+print	sequitur.cc	/^void print()$/;"	f
+print	sequitur_simple.cc	/^void print()$/;"	f
+print_rule_freq	sequitur.cc	/^  print_rule_freq = 0,$/;"	v
+print_rule_usage	sequitur.cc	/^  print_rule_usage = 0,$/;"	v
+print_wc	sequitur.cc	/^void print_wc()$/;"	f
+purge_context	stats.c	/^purge_context(context *pContext)$/;"	f
+quiet	sequitur.cc	/^  quiet = 0,$/;"	v
+r	java/guard.java	/^  rule r;$/;"	f	class:guard
+r	java/nonTerminal.java	/^  rule r;$/;"	f	class:nonTerminal
+raw_value	classes.h	/^  inline ulong raw_value() { return s; }$/;"	f	class:symbols
+raw_value	sequitur_simple.cc	/^  inline ulong raw_value() {  return s; };$/;"	f	class:symbols
+rcsid	arith.c	/^   rcsid[] = "$Id: arith.c,v 1.1 1996\/08\/07 01:34:11 langs Exp $";$/;"	v	file:
+rcsid	bitio.c	/^    rcsid[] = "$Id: bitio.c,v 1.1 1996\/08\/07 01:34:11 langs Exp $"; $/;"	v	file:
+rcsid	stats.c	/^static char rcsid[] = "$Id: stats.c,v 1.2 1996\/10\/03 01:27:11 langs Exp $";$/;"	v	file:
+reproduce	classes.cc	/^void rules::reproduce()$/;"	f	class:rules
+reproduce	classes.h	/^  void reproduce() {$/;"	f	class:symbols
+reproduce	sequitur.cc	/^  reproduce = 0,$/;"	v
+retrieve_excess_input_bits	arith.c	/^code_value retrieve_excess_input_bits(void)$/;"	f
+reuse	classes.h	/^  void reuse() { count ++; }$/;"	f	class:rules
+reuse	sequitur_simple.cc	/^  void reuse() { count ++; }$/;"	f	class:rules
+rule	classes.h	/^  rules *rule() { return (rules *) s; }$/;"	f	class:symbols
+rule	java/rule.java	/^  rule(){$/;"	m	class:rule
+rule	java/rule.java	/^public class rule{$/;"	c
+rule	sequitur_simple.cc	/^  rules *rule() { return (rules *) s;};$/;"	f	class:symbols
+rule_S	sequitur.cc	/^ofstream *rule_S = 0;$/;"	v
+rules	classes.cc	/^rules::rules() {$/;"	f	class:rules
+rules	classes.h	/^class rules {$/;"	c
+rules	java/sequitur.java	/^  TextArea rules;$/;"	f	class:sequitur
+rules	sequitur_simple.cc	/^class rules {$/;"	c	file:
+rules	sequitur_simple.cc	/^rules::rules()$/;"	f	class:rules
+rulesLabel	java/sequitur.java	/^  Label rulesLabel;$/;"	f	class:sequitur
+rulesPanel	java/sequitur.java	/^  Panel rulesPanel;$/;"	f	class:sequitur
+runSequitur	java/sequitur.java	/^  public void runSequitur(){$/;"	m	class:sequitur
+run_sequitur	sequitur.py	/^def run_sequitur(text):$/;"	f
+s	classes.h	/^  ulong s;            \/\/ symbol value (e.g. ASCII code, or rule index)$/;"	m	class:symbols
+s	sequitur_simple.cc	/^  ulong s;$/;"	m	class:symbols	file:
+sequitur	java/sequitur.java	/^public class sequitur extends java.applet.Applet {$/;"	c
+start_compress	compress.cc	/^void start_compress(bool all_input_read)$/;"	f
+start_decode	arith.c	/^start_decode(void)$/;"	f
+start_encode	arith.c	/^void start_encode(void)$/;"	f
+startinputtingbits	bitio.c	/^void startinputtingbits(void)$/;"	f
+startoutputtingbits	bitio.c	/^void startoutputtingbits(void)$/;"	f
+stats_desc	stats.c	/^    char *stats_desc = "Cumulative stats with Fenwick tree (MPS at front)";$/;"	v
+stats_desc	stats.c	/^    char *stats_desc = "Cumulative stats with Fenwick tree";$/;"	v
+stop_forgetting	compress.cc	/^void stop_forgetting()$/;"	f
+submit	java/sequitur.java	/^  Button submit;$/;"	f	class:sequitur
+substitute	classes.cc	/^void symbols::substitute(rules *r)$/;"	f	class:symbols
+substitute	java/symbol.java	/^  public void substitute(rule r){$/;"	m	class:symbol
+substitute	sequitur.py	/^  def substitute(self, r):$/;"	m	class:Symbol
+substitute	sequitur_simple.cc	/^void symbols::substitute(rules *r)$/;"	f	class:symbols
+symbol	compress.cc	/^static context *symbol,            \/\/ special symbols, terminals, non-terminals$/;"	v	file:
+symbol	java/symbol.java	/^public abstract class symbol{$/;"	c
+symbols	classes.h	/^  symbols(rules *r) {$/;"	f	class:symbols
+symbols	classes.h	/^  symbols(ulong sym) {$/;"	f	class:symbols
+symbols	classes.h	/^class symbols {$/;"	c
+symbols	sequitur_simple.cc	/^  symbols(rules *r) {$/;"	f	class:symbols
+symbols	sequitur_simple.cc	/^  symbols(ulong sym) {$/;"	f	class:symbols
+symbols	sequitur_simple.cc	/^class symbols {$/;"	c	file:
+table	classes.cc	/^symbols **table = 0;$/;"	v
+table	sequitur_simple.cc	/^symbols *table[PRIME];$/;"	v
+table_size	classes.cc	/^int table_size;$/;"	v
+terminal	java/terminal.java	/^  terminal(int theValue){$/;"	m	class:terminal
+terminal	java/terminal.java	/^public class terminal extends symbol implements Cloneable{$/;"	c
+test	sequitur.py	/^def test():  $/;"	f
+test	test.pl	/^sub test {$/;"	s
+text	java/sequitur.java	/^  TextArea text;$/;"	f	class:sequitur
+theDigrams	java/symbol.java	/^  static Hashtable theDigrams = new Hashtable(symbol.prime);$/;"	f	class:symbol
+theGuard	java/rule.java	/^  public guard theGuard;$/;"	f	class:rule
+total	stats.h	/^    freq_value total;			\/* total of all frequencies *\/$/;"	m	struct:__anon1
+tree	stats.h	/^    freq_value *tree;			\/* Fenwick's binary index tree *\/$/;"	m	struct:__anon1
+type	stats.h	/^    int type;				\/* context may be STATIC or DYNAMIC *\/$/;"	m	struct:__anon1
+ulong	classes.h	/^typedef unsigned long ulong;$/;"	t
+uncompress	compress.cc	/^void uncompress()$/;"	f
+unget_bit	bitio.c	/^void unget_bit(int bit)$/;"	f
+usage	classes.h	/^  int usage()          { return Usage; }$/;"	f	class:rules
+usage	classes.h	/^  void usage(int i)    { Usage += i; }$/;"	f	class:rules
+value	classes.h	/^  inline ulong value() { return s \/ 2; }$/;"	f	class:symbols
+value	java/symbol.java	/^  public int value;$/;"	f	class:symbol
+value	sequitur_simple.cc	/^  inline ulong value() { return s \/ 2;};$/;"	f	class:symbols
+~rules	classes.cc	/^rules::~rules() {$/;"	f	class:rules
+~rules	sequitur_simple.cc	/^rules::~rules() {$/;"	f	class:rules
+~symbols	classes.h	/^  ~symbols() {$/;"	f	class:symbols
+~symbols	sequitur_simple.cc	/^  ~symbols() {$/;"	f	class:symbols

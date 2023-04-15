@@ -1,0 +1,21 @@
+======= wordCount operation =======
+------- with RLE -------
+IO(s): 8.81695
+Computation(s): 0.30411
+Total(s): 9.12106
+
+------- with LZW -------
+IO(s): 2.57984
+Computation(s): 0.244586
+Total(s): 2.82443
+
+------- with TADOC -------
+IO(s): 2.37738
+Computation(s): 0.215928
+Total(s): 2.59331
+
+------- with Uncompressed -------
+IO(s): 52.1331
+Computation(s): 0.301325
+Total(s): 52.4344
+

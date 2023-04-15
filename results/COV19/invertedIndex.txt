@@ -1,0 +1,21 @@
+======= invertedIndex operation =======
+------- with RLE -------
+IO(s): 0.503691
+Computation(s): 0.095286
+Total(s): 0.598977
+
+------- with LZW -------
+IO(s): 0.019515
+Computation(s): 0.00476
+Total(s): 0.024275
+
+------- with TADOC -------
+IO(s): 0.089825
+Computation(s): 0.04021
+Total(s): 0.130035
+
+------- with Uncompressed -------
+IO(s): 1.74254
+Computation(s): 0.175662
+Total(s): 1.9182
+
