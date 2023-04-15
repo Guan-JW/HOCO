@@ -14,7 +14,7 @@ We evaluate the three HC schemes on a platform which is equipped an Intel(R) Cor
 
 ## Run example
 
-The source code of the three HC schemes is in the directory `src/Compress_methods`, and the code of operating on uncompressed data is in the directory `src/Origin`. The uncompressed datasets are located in the directory `input/Original`, including 19NSR, COV19, DBLP, and a 2.1GB Wikipedia dataset.
+The source code of the three HC schemes is in the directory `src/Compress_methods`, and the code of operating on uncompressed data is in the directory `src/Origin`. 
 
 Run the code as follows.
 
@@ -24,7 +24,7 @@ Run the code as follows.
    tar -xzvf input.tar.gz
    ```
 
-   Unzip the compressed package `input.tar.gz`. Uncompressed text will be located under the `/input/Original_data` directory.
+   Unzip the compressed package `input.tar.gz`. The uncompressed dataset `COV19` will be located under the `/input/Original_data` directory. 
 
 2. **Compress the data with three HC schemes.** 
 
