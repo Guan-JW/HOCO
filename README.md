@@ -18,7 +18,15 @@ The source code of the three HC schemes is in the directory `src/Compress_method
 
 Run the code as follows.
 
-1. **Compress the data with three HC schemes.** 
+1. **Get datasets.**
+
+   ```shell
+   tar -xzvf input.tar.gz
+   ```
+
+   Unzip the compressed package `input.tar.gz`. Uncompressed text will be located under the `/input/Original_data` directory.
+
+2. **Compress the data with three HC schemes.** 
 
    ```shell
    cd HOCO_SIGMOD24/src/scripts
@@ -27,14 +35,14 @@ Run the code as follows.
 
    The default storage path for compressed text is `input/Compressed_data`. You can modify the script to specify a alternative path.
 
-2. **Run manipulation operations.** The following script prompts the three HC schemes to perform extract, insert, and delete operations on all the datasets. It also performs the above operations on uncompressed text as baselines.
+3. **Run manipulation operations.** The following script prompts the three HC schemes to perform extract, insert, and delete operations on all the datasets. It also performs the above operations on uncompressed text as baselines.
 
    ```shell
    cd HOCO_SIGMOD24/src/scripts
    bash run_manipulate.sh
    ```
 
-3. **Run analytic tasks.** The following script prompts the three HC schemes to perform word count, inverted index, and sequence count tasks on all the datasets. It also performs the above tasks on uncompressed text as baselines.
+4. **Run analytic tasks.** The following script prompts the three HC schemes to perform word count, inverted index, and sequence count tasks on all the datasets. It also performs the above tasks on uncompressed text as baselines.
 
    ```shell
    cd HOCO_SIGMOD24/src/scripts
