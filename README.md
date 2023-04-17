@@ -33,7 +33,7 @@ Run the code as follows.
    bash run_compress.sh
    ```
 
-   The default storage path for compressed text is `input/Compressed_data`. You can modify the script to specify a alternative path.
+   The default storage path for compressed text is `input/Compressed_data`. You can modify the script to specify an alternative path.
 
 3. **Run manipulation operations.** The following script prompts the three HC schemes to perform extract, insert, and delete operations on all the datasets. It also performs the above operations on uncompressed text as baselines.
 
