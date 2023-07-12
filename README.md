@@ -51,3 +51,48 @@ Run the code as follows.
 
 By default, the results of the scripts are output to the directory `results`. We have placed our results under this directory for reference. 
 
+## Test HOCO Framework
+The prototype code for the HOCO framework can be found in the  `HOCO/` directory. Please note that the code provided serves as a demonstration of the system's key utility and functionality, showcasing the organization and operation of each module. We will open-source the complete system for reuse by the community upon the paper's acceptance.
+
+Test the system as follows.
+
+1. **Setting up**. To ensure proper functioning of the system, it is necessary to have the Boost library installed. You can install it using the apt-get package manager or by visiting the official website to obtain the latest Boost package and following the provided installation instructions.
+   ```shell
+   # Opt1: install with apt-get
+   sudo apt-get install libboost-all-dev
+   # Opt2: install with source code
+   wget https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz
+   tar -xzvf boost_1_82_0.tar.gz
+   cd boost_1_82_0/
+   ./bootstrap.sh
+   sudo ./b2 install
+   ```
+
+
+2. **Compile the system.** Execute the following commands to generate executable test files for each module. The test files will be generated in the `build/` directory.
+   ```shell
+   cd HOCO/
+   mkdir build/ && cd build/
+   cmake ..
+   make
+   ```
+
+3. **Test the modules.** To test each module, use ctest by running the following command in the terminal:
+   ```shell
+   ctest
+   ```
+   This command will initiate the testing process, and the terminal will display results similar to the following:
+   ```shell
+   Test project /Your/Path/To/HOCO_SIGMOD24/HOCO/build
+      Start 1: CompressModuleTest
+   1/3 Test #1: CompressModuleTest ...............   Passed   10.98 sec
+      Start 2: EvaluateModuleTest
+   2/3 Test #2: EvaluateModuleTest ...............   Passed    2.90 sec
+      Start 3: SchemeCollectModuleTest
+   3/3 Test #3: SchemeCollectModuleTest ..........   Passed   29.41 sec
+
+   100% tests passed, 0 tests failed out of 3
+
+   Total Test time (real) =  43.31 sec
+   ```
+   You can find the process outputs at `Your/Path/To/HOCO_SIGMOD24/HOCO/build/Testing/Temporary/LastTest.log`.

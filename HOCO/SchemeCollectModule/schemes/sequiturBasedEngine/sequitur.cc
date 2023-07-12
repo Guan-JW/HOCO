@@ -7,7 +7,7 @@
     program initialization, reading the input...
 
  Compilation notes:
-    Define PLATFORM_MSWIN macro if compiling this program under Windows,
+    Dedicfilee PLATFORM_MSWIN macro if compiling this program under Windows,
     or PLATFORM_UNIX if compiling it under Unix/Linux.
 
  Program usage (syntax):
@@ -32,8 +32,8 @@
 
 #include <limits.h>
 #include "classes.h"
+#include "sequitur.h"
 
-#include<map>
 #include<fstream>
 
 #include <sys/time.h>
@@ -48,28 +48,41 @@ double timestamp ()
 
 map<ulong,string> dictionary_use;
 map<string,ulong> dictionary_reverse;
-  int fileid;
+  int fileid = 0;
 
-void print_wc();
+void print_wc(int** row, int** col);
 string getWordDictionary(ifstream& in)
 {
     int c;
   char t;
     string word;
     t = in.get();
-    if( t == ' ' || t == '\t' || t == '\n' ) {
+    if( t == ' ' || t == '\t' || t == '\n' || t == '\r' || t == ',' || t == '.') {
       return string(1,t);
     }
     word += t;
     while( !in.eof() ){
-        c = in.get();
-        if( c == '\n' ) {
+        t = in.get();
+        if( t == '\n' ) {
           break;
         }
-        word += c;
+        word += t;
     }
     return word;
 }
+
+
+
+void calculate_rule_usage(rules *r)
+{
+  for (symbols *p = r->first(); !p->is_guard(); p = p->next()) {
+    if (p->non_terminal()) {
+      p->rule()->usage(1);
+      calculate_rule_usage(p->rule());
+    }
+  }
+}
+
 
 rules *S;                 // pointer to main rule of the grammar
 
@@ -131,16 +144,21 @@ usage: sequitur -cdpqrtTuz -k <K> -e <delimiter> -f <max symbols> -m <memory_lim
       will be generated once the grammar reaches this size\n\
 ";
 
-int main(int argc, char **argv)
+
+// for print the rules out
+rules **R1;
+int Ri;
+
+extern "C" int sequitur(string out_path, map<string, int>& dic, 
+                          vector<int> & input, int** row, int** col, 
+                          int* rule_num, int doCompress)
 {
-  double time_1=timestamp();
-  double time_2;
-  double time_3;
-  double time_4;
-  double time_5;
+  cout << "sequitur" << endl;
+  
+  output_path = out_path;
+  if (doCompress == 2)  do_uncompress = 1;
   extern char *optarg;         // these are...
   extern int optind, opterr;   // ... from getopt()
-  output_path = argv[2];
 
   // number of input characters read so far (used only for progress indicator)
   int chars = 0;
@@ -149,76 +167,16 @@ int main(int argc, char **argv)
 
   int c;
 
-  int doCompress = 0;
-  string dicPath ;
-
-  while ((c = getopt(argc, argv, "cuk:prf:qzdtTe:hm:b:")) != -1) {
-    switch (c) {
-      case 'h': cerr << help; exit(2); break;
-      case 't': print_rule_freq = 1; break;
-      case 'T': print_rule_usage = 1; break;
-      case 'd': numbers = 1; break;
-      case 'c': compress = 1; break;
-      case 'u': do_uncompress = 1; break;
-      case 'p': do_print = 1; break;
-      case 'r': reproduce = 1; break;
-      case 'q': quiet = 1; break;
-      case 'z': phind = 1; break;
-      case 'e': delimiter_string = optarg; break;
-      case 'f': max_symbols = atoi(optarg); break;
-      case 'k': K = atoi(optarg) - 1; break;
-      case 'm': memory_to_use = atoi(optarg) * 1000000; break;
-
-      case 'b': doCompress = 1;
-                dicPath = optarg; break;
-    }
-  }
-    time_1=timestamp();
   //if(0){//for saving time zf 20180121
   if(doCompress == 1){
+    cout << "do compress" << endl;
     numbers=1;
-    //do_print=1;
-
-    dicPath += "/dictionary.dic";
-    // cout<<"dic path:"<<endl;
-    // cout<<dicPath <<endl;
-
-    // cout<<"Start\n";
-
-    ifstream fin(dicPath.c_str());
-    ulong tem_num;
-    string tem_word;
-
-    tem_num=-1;
-    fin>>tem_num;
-    fin.get();
-
-    while(!fin.eof()){
-      tem_word=getWordDictionary(fin);
-      dictionary_use[tem_num]=tem_word;
-      //dictionary_reverse[tem_word]=tem_num;//useless
-
-      tem_num=-1;
-      fin>>tem_num;
-      fin.get();
+    for (map<string, int>::iterator i = dic.begin(); 
+                    i != dic.end(); i ++) {
+      dictionary_use[i->second] = i->first;
+      dictionary_reverse[i->first] = i->second;
     }
-    fin.close();
-
-    /*
-  for(map<ulong,string>::iterator it=dictionary_use.begin();
-      it!=dictionary_use.end();
-      it++){
-    cout<<it->first<<" "<<it->second<<endl;
   }
-  */
-
-
-    cout<<"->dictionary.size: "<<dictionary_use.size()<<endl;
-
-
-    //exit(0);
-  }
-    time_2=timestamp();
 
   if (K < 1) {
     cerr << "sequitur: k must be at least 2" << endl;
@@ -267,15 +225,18 @@ int main(int argc, char **argv)
   //
 
   int i;
+  int wid = 0;
 
-  cin >> fileid;
-  int sizeDic;//useless
-  cin >> sizeDic;//useless
-  int wordTotal;//useless
-  cin >> wordTotal;//useless
+  // cin >> fileid;
+  // int sizeDic;//useless
+  // cin >> sizeDic;//useless
+  // int wordTotal;//useless
+  // cin >> wordTotal;//useless
 
-  if (numbers) cin >> i;
-  else i = cin.get();
+  int sizeDic = dictionary_use.size();
+  int wordTotal = input.size();
+
+  i = input[wid ++];
   min_terminal = max_terminal = i;
 
   S->last()->insert_after(new symbols(i));
@@ -285,34 +246,33 @@ int main(int argc, char **argv)
   //
   // now loop reading characters (loop will end upon reaching end of input)
   //
-  static int last_time = 0;
-  struct timeb tp;
-  ftime(&tp);
-  last_time =  tp.time * 1000 + tp.millitm;
+  // static int last_time = 0;
+  // struct timeb tp;
+  // ftime(&tp);
+  // last_time =  tp.time * 1000 + tp.millitm;
 
   while (1) {
 
-// progress indicator
-#ifdef PLATFORM_UNIX
-    if (++ chars % 1000000 == 0 && !quiet) {
-      struct tms buffer;
-      extern int collisions, lookups, occupancy;//, occ[100];
+// // progress indicator
+// #ifdef PLATFORM_UNIX
+//     if (++ chars % 1000000 == 0 && !quiet) {
+//       struct tms buffer;
+//       extern int collisions, lookups, occupancy;//, occ[100];
 
-      ftime(&tp);
-      int milliseconds =  tp.time * 1000 + tp.millitm;
+//       ftime(&tp);
+//       int milliseconds =  tp.time * 1000 + tp.millitm;
 
-    //   fprintf(stderr, "%3d MB processed, %.2f MB/s, %.3f collisions/lookup, %.2f%% occupancy\n",
-	//       chars / 1000000, 1000.0 / (milliseconds - last_time),
-	//       collisions/ float(lookups), 100.0 * occupied / table_size);
-      //      last_time = buffer.tms_utime;
-      last_time = milliseconds;
-    }
-#endif
+//     //   fprintf(stderr, "%3d MB processed, %.2f MB/s, %.3f collisions/lookup, %.2f%% occupancy\n",
+// 	//       chars / 1000000, 1000.0 / (milliseconds - last_time),
+// 	//       collisions/ float(lookups), 100.0 * occupied / table_size);
+//       //      last_time = buffer.tms_utime;
+//       last_time = milliseconds;
+//     }
+// #endif
 
     // read a character, if on end of input exit loop
-    if (numbers) cin >> i;
-    else i = cin.get();
-    if (cin.eof()) break;
+    if (wid == input.size())  break;
+    i = input[wid ++];
 
     if (i < min_terminal) min_terminal = i;
     else if (i > max_terminal) max_terminal = i;
@@ -364,63 +324,42 @@ int main(int argc, char **argv)
 
   if(doCompress == 1){
      number();
-    time_3=timestamp();
-     print_wc();
+     rule_num[0] = Ri;
+     print_wc(row, col);
   }
-    time_4=timestamp();
-    // cout<<"read dictionary: "<<time_2-time_1<<endl;
-    // cout<<"generate DAG: "<<time_3-time_2<<endl;
-    // cout<<"write file: "<<time_4-time_3<<endl;
-    cout << "Compressing time(s) : " << time_4 - time_1 << endl;
-
     return 0;
 }
 
 
-// print the rules out
+// for print the rules out
 
-rules **R1;
-int Ri;
-
-void print_wc()
+void print_wc(int** row, int** col)
 {
-  int* row=(int*)malloc(sizeof(int)*(1+Ri));
-  memset(row,0,sizeof(int)*(1+Ri));
+
+  (*row)=(int*)malloc(sizeof(int)*(1+Ri));
+  memset((*row),0,sizeof(int)*(1+Ri));
   for (int i = 0; i < Ri; i ++) {
     for (symbols *p = R1[i]->first(); !p->is_guard(); p = p->next())
-      row[i+1]++;
+      (*row)[i+1]++;
   }
-  for (int i = 0; i < 5; i ++)
-    cout << "row-i: " << row[i] << endl;
+  // for (int i = 0; i < 5; i ++)
+  //   cout << "row-i: " << (*row)[i] << endl;
   for (int i = 0; i < Ri; i ++) {
-    row[i+1]+=row[i];
+    (*row)[i+1]+=(*row)[i];
   }
 
   int counttmp=0;
-  int* col=(int*)malloc(sizeof(int)*row[Ri]);
+  (*col)=(int*)malloc(sizeof(int)*(*row)[Ri]);
   for (int i = 0; i < Ri; i ++) {
     for (symbols *p = R1[i]->first(); !p->is_guard(); p = p->next())
       if (p->non_terminal()) {
-        col[counttmp++]=(p->rule()->index() +dictionary_use.size());
+        (*col)[counttmp++]=(p->rule()->index() + dictionary_use.size());
       }
       else {
-        col[counttmp++]=((p->s)-1)/2 ;
+        (*col)[counttmp++]=((p->s)-1)/2 ;
       }
   }
   // cout<<"Words: "<< dictionary_use.size()<<endl;
-  cout<<"Rules: "<< Ri<<endl;
-
-
-  ofstream frowcol(output_path + "/rowCol.dic");
-  frowcol<<fileid<<" "<<dictionary_use.size()<<" "<<Ri<<endl;
-  for(int i=0; i<Ri; i++){
-    frowcol<<row[i+1]-row[i]<<" ";
-    // cout << "rule-" << i << " size: " << row[i+1]-row[i] << endl;
-    for(int j=row[i]; j<row[i+1]; j++){
-      frowcol<<col[j]<<" ";
-    }
-  }
-  frowcol.close();
 }
 
 
@@ -509,15 +448,4 @@ void forget_print(symbols *s)
 
   // put space between symbols
   *rule_S << ' ';
-}
-
-
-void calculate_rule_usage(rules *r)
-{
-  for (symbols *p = r->first(); !p->is_guard(); p = p->next()) {
-    if (p->non_terminal()) {
-      p->rule()->usage(1);
-      calculate_rule_usage(p->rule());
-    }
-  }
 }

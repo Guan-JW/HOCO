@@ -1,0 +1,4 @@
+#include "BaseHC.hpp"
+#include "LZW_HC.hpp"
+#include "RLE_HC.hpp"
+#include "TADOC_HC.hpp"
