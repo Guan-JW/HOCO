@@ -8,6 +8,12 @@ HOCO currently includes three HC schemes with different compression ratios and d
 
 It contains scripts that allow you to compress data from scratch and perform manipulation and analytic tasks. 
 
+## Organization of Supplementary Materials
+- **Appendix**: `Appendix_for_Homomorphic_Compression.pdf`.
+- **Data**: `input.tar.gz`.
+- **HOCO system**: `HOCO/`.
+- **Experimental evaluation**: 1) scripts: `src/`, 2) outcomes: `results/`.
+
 ## Experimental Setup
 
 We evaluate the three HC schemes on a platform which is equipped an Intel(R) Core(TM) i7-12700K@3.60 GHz CPU and 128GB memory. The operating system of the platform is Ubuntu 20.04.4.
