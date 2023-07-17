@@ -16,7 +16,7 @@ It contains scripts that allow you to compress data from scratch and perform man
 
 ## Experimental Setup
 
-We evaluate the three HC schemes on a platform which is equipped an Intel(R) Core(TM) i7-12700K@3.60 GHz CPU and 128GB memory. The operating system of the platform is Ubuntu 20.04.4.
+We evaluate the three HC schemes on a platform which is equipped with an Intel(R) Core(TM) i7-12700K@3.60 GHz CPU and 128GB memory. The operating system of the platform is Ubuntu 20.04.4.
 
 ## Run example
 
