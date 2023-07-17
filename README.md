@@ -66,6 +66,7 @@ Test the system as follows.
    ```shell
    # Option1: install with apt-get
    sudo apt-get install libboost-all-dev
+   
    # Option2: install with source code
    wget https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz
    tar -xzvf boost_1_82_0.tar.gz
