@@ -107,6 +107,7 @@ Test the system as follows.
 ## Citation
 If you use this codebase or otherwise found our work valuable, please cite:
 
+```
 @article{guan2023homomorphic,
   title={Homomorphic Compression: Making Text Processing on Compression Unlimited},
   author={Guan, Jiawei and Zhang, Feng and Ma, Siqi and Chen, Kuangyu and Hu, Yihua and Chen, Yuxing and Pan, Anqun and Du, Xiaoyong},
@@ -117,3 +118,4 @@ If you use this codebase or otherwise found our work valuable, please cite:
   year={2023},
   publisher={ACM New York, NY, USA}
 }
+```
