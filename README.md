@@ -103,3 +103,17 @@ Test the system as follows.
    Total Test time (real) =  43.31 sec
    ```
    You can find the process outputs at `Your/Path/To/HOCO_SIGMOD24/HOCO/build/Testing/Temporary/LastTest.log`.
+
+## Citation
+If you use this codebase or otherwise found our work valuable, please cite:
+
+@article{guan2023homomorphic,
+  title={Homomorphic Compression: Making Text Processing on Compression Unlimited},
+  author={Guan, Jiawei and Zhang, Feng and Ma, Siqi and Chen, Kuangyu and Hu, Yihua and Chen, Yuxing and Pan, Anqun and Du, Xiaoyong},
+  journal={Proceedings of the ACM on Management of Data},
+  volume={1},
+  number={4},
+  pages={1--28},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
