@@ -18,6 +18,22 @@ It contains scripts that allow you to compress data from scratch and perform man
 
 We evaluate the three HC schemes on a platform which is equipped with an Intel(R) Core(TM) i7-12700K@3.60 GHz CPU and 128GB memory. The operating system of the platform is Ubuntu 20.04.4.
 
+### Dependencies
+
+Before running the code, ensure you have the following packages installed:
+
+- **git**: For version control and downloading the source code.
+- **make**: For building the HOCO system.
+- **g++**: The GNU C++ compiler, required for compiling the source code.
+
+You can install these packages on Ubuntu using:
+
+```shell
+sudo apt-get update
+sudo apt-get install git make g++
+```
+
+
 ## Run example
 
 The source code of the three HC schemes is in the directory `src/Compress_methods`, and the code of operating on uncompressed data is in the directory `src/Origin`. 
@@ -28,6 +44,7 @@ Run the code as follows.
 
    ```shell
    git clone https://github.com/Guan-JW/HOCO.git HOCO_SIGMOD24
+   cd HOCO_SIGMOD24
    tar -xzvf input.tar.gz
    ```
 
