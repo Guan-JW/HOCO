@@ -24,9 +24,10 @@ The source code of the three HC schemes is in the directory `src/Compress_method
 
 Run the code as follows.
 
-1. **Get datasets.**
+1. **Download source code and get datasets.**
 
    ```shell
+   git clone https://github.com/Guan-JW/HOCO.git HOCO_SIGMOD24
    tar -xzvf input.tar.gz
    ```
 
@@ -58,7 +59,7 @@ Run the code as follows.
 By default, the results of the scripts are output to the directory `results`. We have placed our results under this directory for reference. 
 
 ## Test HOCO Framework
-The prototype code for the HOCO framework can be found in the  `HOCO/` directory. Please note that the code provided serves as a demonstration of the system's key utility and functionality, showcasing the organization and operation of each module. We will open-source the complete system for reuse by the community upon the paper's acceptance.
+The prototype code for the HOCO framework can be found in the  `HOCO/` directory.
 
 Test the system as follows.
 

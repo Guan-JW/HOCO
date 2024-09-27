@@ -1,4 +1,8 @@
 cd ../manipulate
+exe_dir=../bin
+if [ ! -d "$exe_dir" ]; then
+  mkdir "$exe_dir"
+fi
 make delete
 
 for file in $(ls $1)
@@ -6,5 +10,5 @@ do
     if [ $file == fileYyNO.txt ];then
         continue
     fi
-    ../bin/delete $1/$file >> $2
+    ${exe_dir}/delete $1/$file >> $2
 done
