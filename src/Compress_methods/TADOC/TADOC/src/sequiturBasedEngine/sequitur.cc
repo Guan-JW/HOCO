@@ -390,8 +390,8 @@ void print_wc()
     for (symbols *p = R1[i]->first(); !p->is_guard(); p = p->next())
       row[i+1]++;
   }
-  for (int i = 0; i < 5; i ++)
-    cout << "row-i: " << row[i] << endl;
+  // for (int i = 0; i < 5; i ++)
+  //   cout << "row-i: " << row[i] << endl;
   for (int i = 0; i < Ri; i ++) {
     row[i+1]+=row[i];
   }

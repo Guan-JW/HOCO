@@ -7,7 +7,7 @@ input_folder="$path/input/Compressed_data"
 origin_folder="$path/input/Original_data"
 input_datasets=$(ls $origin_folder)
 Algo_folder="$path/src/Compress_methods"
-output_folder="$path/results1"
+output_folder="$path/results"
 
 for input_dataset in ${input_datasets}
 do
