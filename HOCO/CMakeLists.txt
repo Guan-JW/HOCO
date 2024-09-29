@@ -4,6 +4,9 @@ project(HOCO_TESTS)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-O3")
 
+find_package(Boost REQUIRED)
+message(STATUS "Boost version: ${Boost_VERSION}")
+
 set(SchemeCollectModuleDIR SchemeCollectModule)
 set(SchemesDIR ${SchemeCollectModuleDIR}/schemes)
 set(SeuiturDIR ${SchemesDIR}/sequiturBasedEngine)
