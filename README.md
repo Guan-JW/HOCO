@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Homomorphic compression is a new theory of compression. It generalizes and characerizes compression algorithms with direct processing capability in a principled way. Based on this theory, we present HOCO, a text data management system that supports operating on compressed data. 
+Homomorphic compression is a new theory of compression. It generalizes and characterizes compression algorithms with direct processing capability in a principled way. Based on this theory, we present HOCO, a text data management system that supports operating on compressed data. 
 
 HOCO currently includes three HC schemes with different compression ratios and direct processing abilities. This directory contains code of the three HC schemes implemented in HOCO. The code is used for reproduce the results shown in the HOCO paper. 
 
