@@ -81,13 +81,8 @@ The prototype code for the HOCO framework can be found in the  `HOCO/` directory
 Test the system as follows.
 
 1. **Setting up**. To ensure proper functioning of the system, it is necessary to have the Boost library installed. You can install it using the apt-get package manager or by visiting the official website to obtain the latest Boost package and following the provided installation instructions.
-   ```shell
-   # Option1: install with apt-get
-   sudo apt-get install libboost-all-dev
-   ```
    For better compatibility, it is recommended to install a higher Boost version from source:
    ```shell
-   # Option2: install with source code
    wget https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz
    tar -xzvf boost_1_82_0.tar.gz
    cd boost_1_82_0/
